@@ -71,15 +71,12 @@ echo 'unit testing the code'
 }
 
 stage('Release')
-
 {
-
-
-
+when{
+branch "origin/master"
+}
 steps{
-
 echo 'releasing the project'
-
 }
 
 
